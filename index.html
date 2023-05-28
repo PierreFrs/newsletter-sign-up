@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="font-Roboto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body
+    class="h-screen flex justify-center items-center text-neutralCharcoalGrey leading-6"
+  >
+    <!-- Sign-up form start -->
+    <main
+      class="sign-up-form h-full w-full flex flex-col justify-center items-center"
+    >
+      <!-- illustration -->
+      <div class="img-container w-full h-auto">
+        <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+          class="w-full"
+        />
+      </div>
+      <!-- end of illustration -->
+      <!-- description -->
+      <div class="desc p-6">
+        <h1 class="title text-5xl font-bold text-neutralDarkSlateGrey mb-4">
+          Stay updated!
+        </h1>
+        <p class="list-title mb-4">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="spec-list flex flex-col gap-4">
+          <li class="list-item">
+            <img
+              src="./assets/images/icon-list.svg"
+              class="inline mr-4"
+            />Product discovery and building what matters
+          </li>
+          <li class="list-item">
+            <img
+              src="./assets/images/icon-list.svg"
+              class="inline mr-4"
+            />Measuring to ensure updates are a success
+          </li>
+          <li class="list-item">
+            <img src="./assets/images/icon-list.svg" class="inline mr-4" />And
+            much more
+          </li>
+        </ul>
+      </div>
+      <!-- end of description -->
+      <!-- form -->
+      <form class="form flex flex-col items-center p-6 w-full">
+        <div class="w-full label-error-container flex justify-between">
+          <label for="email" class="font-bold">Email address</label>
+          <p class="error font-bold text-primaryTomato text-sm">
+            Valid email required
+          </p>
+        </div>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@company.com"
+          class="w-full p-4 m-4 border border-solid border-1 border-neutralGrey rounded-lg"
+        />
+        <button
+          class="submit-btn w-full p-4 rounded-lg submit bg-neutralDarkSlateGrey text-neutralWhite hover:bg-primaryTomato transition-colors duration-300 ease-in-out"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+      <!-- end of form -->
+    </main>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <main
+      class="success-message p-6 h-full w-full flex flex-col justify-center hidden"
+    >
+      <div class="image-container mb-8">
+        <img src="./assets/images/icon-success.svg" />
+      </div>
+      <div class="text-container mb-7">
+        <h1 class="title text-5xl font-bold text-neutralDarkSlateGrey mb-4">
+          Thanks for subscribing!
+        </h1>
+        <p class="thanks-message">
+          A confirmation email has been sent to ash@loremcompany.com. Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button
+        class="dissmiss-btn w-full p-4 rounded-lg submit bg-neutralDarkSlateGrey text-neutralWhite hover:bg-primaryTomato transition-colors duration-300 ease-in-out"
+      >
+        Dismiss message
+      </button>
+    </main>
+
+    <!-- Success message end -->
+
+    <div class="attribution absolute bottom-0">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
