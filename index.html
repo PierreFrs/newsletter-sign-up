@@ -70,12 +70,12 @@
         <div class="w-full label-error-container flex justify-between">
           <label for="email" class="font-bold">Email address</label>
           <p class="error font-bold text-primaryTomato text-sm">
-            Valid email required
+            <!-- Displayed dynamicaly in app.js -->
           </p>
         </div>
 
         <input
-          type="email"
+          type="text"
           id="email"
           name="email"
           placeholder="email@company.com"
@@ -93,7 +93,7 @@
 
     <!-- Success message start -->
     <main
-      class="success-message p-6 h-full w-full flex flex-col justify-center hidden"
+      class="success-modal p-6 h-full w-full flex flex-col justify-center hidden"
     >
       <div class="image-container mb-8">
         <img src="./assets/images/icon-success.svg" />
@@ -108,7 +108,7 @@
         </p>
       </div>
       <button
-        class="dissmiss-btn w-full p-4 rounded-lg submit bg-neutralDarkSlateGrey text-neutralWhite hover:bg-primaryTomato transition-colors duration-300 ease-in-out"
+        class="dismiss-btn w-full p-4 rounded-lg submit bg-neutralDarkSlateGrey text-neutralWhite hover:bg-primaryTomato transition-colors duration-300 ease-in-out"
       >
         Dismiss message
       </button>
