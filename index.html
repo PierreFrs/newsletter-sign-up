@@ -22,78 +22,86 @@
     </title>
   </head>
   <body
-    class="h-screen flex justify-center items-center text-neutralCharcoalGrey leading-6"
+    class="h-screen flex justify-center items-center text-neutralCharcoalGrey leading-6 bg-neutralCharcoalGrey"
   >
     <!-- Sign-up form start -->
     <main
-      class="sign-up-form h-full w-full flex flex-col justify-center items-center"
+      class="sign-up-form flex flex-col justify-center items-center h-100% sm:flex-row sm:p-6 max-w-screen-lg sm:max-h-fit sm:rounded-xl bg-neutralWhite"
     >
       <!-- illustration -->
-      <div class="img-container w-full h-auto">
+      <div class="img-container w-full h- sm:order-last sm:w-5/12">
         <img
           src="./assets/images/illustration-sign-up-mobile.svg"
           alt=""
-          class="w-full"
+          class="w-full sm:hidden"
+        />
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt=""
+          class="w-full hidden sm:block"
         />
       </div>
       <!-- end of illustration -->
-      <!-- description -->
-      <div class="desc p-6">
-        <h1 class="title text-5xl font-bold text-neutralDarkSlateGrey mb-4">
-          Stay updated!
-        </h1>
-        <p class="list-title mb-4">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <ul class="spec-list flex flex-col gap-4">
-          <li class="list-item">
-            <img
-              src="./assets/images/icon-list.svg"
-              class="inline mr-4"
-            />Product discovery and building what matters
-          </li>
-          <li class="list-item">
-            <img
-              src="./assets/images/icon-list.svg"
-              class="inline mr-4"
-            />Measuring to ensure updates are a success
-          </li>
-          <li class="list-item">
-            <img src="./assets/images/icon-list.svg" class="inline mr-4" />And
-            much more
-          </li>
-        </ul>
-      </div>
-      <!-- end of description -->
-      <!-- form -->
-      <form class="form flex flex-col items-center p-6 w-full">
-        <div class="w-full label-error-container flex justify-between">
-          <label for="email" class="font-bold">Email address</label>
-          <p class="error font-bold text-primaryTomato text-sm">
-            <!-- Displayed dynamicaly in app.js -->
+      <!-- article -->
+      <div class="text">
+        <!-- description -->
+        <div class="desc p-6">
+          <h1 class="title text-5xl font-bold text-neutralDarkSlateGrey mb-4">
+            Stay updated!
+          </h1>
+          <p class="list-title mb-4">
+            Join 60,000+ product managers receiving monthly updates on:
           </p>
+          <ul class="spec-list flex flex-col gap-4">
+            <li class="list-item">
+              <img
+                src="./assets/images/icon-list.svg"
+                class="inline mr-4"
+              />Product discovery and building what matters
+            </li>
+            <li class="list-item">
+              <img
+                src="./assets/images/icon-list.svg"
+                class="inline mr-4"
+              />Measuring to ensure updates are a success
+            </li>
+            <li class="list-item">
+              <img src="./assets/images/icon-list.svg" class="inline mr-4" />And
+              much more
+            </li>
+          </ul>
         </div>
+        <!-- end of description -->
+        <!-- form -->
+        <form class="form flex flex-col items-center p-6 w-full">
+          <div class="w-full label-error-container flex justify-between">
+            <label for="email" class="font-bold">Email address</label>
+            <p class="error font-bold text-primaryTomato text-sm">
+              <!-- Displayed dynamicaly in app.js -->
+            </p>
+          </div>
 
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="email@company.com"
-          class="w-full p-4 m-4 border border-solid border-1 border-neutralGrey rounded-lg"
-        />
-        <button
-          class="submit-btn w-full p-4 rounded-lg submit bg-neutralDarkSlateGrey text-neutralWhite hover:bg-primaryTomato transition-colors duration-300 ease-in-out"
-        >
-          Subscribe to monthly newsletter
-        </button>
-      </form>
-      <!-- end of form -->
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="email@company.com"
+            class="w-full p-4 m-4 border border-solid border-1 border-neutralGrey rounded-lg"
+          />
+          <button
+            class="submit-btn w-full p-4 rounded-lg submit bg-neutralDarkSlateGrey text-neutralWhite hover:bg-primaryTomato transition-colors duration-300 ease-in-out"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+        <!-- end of form -->
+      </div>
     </main>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
     <main
-      class="success-modal p-6 h-full w-full flex flex-col justify-center hidden"
+      class="success-modal p-6 h-full w-full flex flex-col justify-center hidden bg-neutralWhite sm:rounded-xl max-w-lg sm:max-h-[512px]"
     >
       <div class="image-container mb-8">
         <img src="./assets/images/icon-success.svg" />
