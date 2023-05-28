@@ -13,11 +13,12 @@ function validateEmail(inputField) {
   return inputField.value.match(validRegex);
 }
 
-const displayError = (input) => {
+// display error message and input field red borders
+const displayError = (element) => {
   errorMessage.textContent = "Valid email required";
-  inputField.classList.remove("border-neutralGrey");
-  inputField.classList.add("border-primaryTomato");
-  inputField.focus();
+  element.classList.remove("border-neutralGrey");
+  element.classList.add("border-primaryTomato");
+  element.focus();
 };
 
 // toggle subscribe page and success modal
